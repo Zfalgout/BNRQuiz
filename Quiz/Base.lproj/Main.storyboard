@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,13 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iA2-vz-wVL">
-                                <rect key="frame" x="147.5" y="118" width="25" height="21"/>
+                                <rect key="frame" x="148" y="118" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.22759912582090847" green="0.5" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSg-Df-bGX">
-                                <rect key="frame" x="147.5" y="213" width="25" height="21"/>
+                                <rect key="frame" x="148" y="213" width="25" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.2275991258" green="0.5" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -47,22 +48,35 @@
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pu8-Hq-hIg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZCR-Df-ABq">
+                                <rect key="frame" x="139" y="118" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2275991258" green="0.5" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="PqF-D8-hv6" firstAttribute="top" secondItem="iA2-vz-wVL" secondAttribute="bottom" constant="15" id="7F6-I1-47p"/>
-                            <constraint firstItem="iSg-Df-bGX" firstAttribute="centerX" secondItem="iA2-vz-wVL" secondAttribute="centerX" id="PO2-oJ-45K"/>
-                            <constraint firstItem="iA2-vz-wVL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="98" id="Pbo-Cv-2nj"/>
-                            <constraint firstItem="PqF-D8-hv6" firstAttribute="centerX" secondItem="iA2-vz-wVL" secondAttribute="centerX" id="bF4-gA-NQQ"/>
-                            <constraint firstItem="C5y-ti-QOO" firstAttribute="top" secondItem="iSg-Df-bGX" secondAttribute="bottom" constant="35" id="kie-ZK-vcG"/>
+                            <constraint firstItem="PqF-D8-hv6" firstAttribute="top" secondItem="ZCR-Df-ABq" secondAttribute="bottom" constant="15" id="BKj-lG-YVz"/>
+                            <constraint firstItem="ZCR-Df-ABq" firstAttribute="top" secondItem="iA2-vz-wVL" secondAttribute="top" id="FpU-iH-vDF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PqF-D8-hv6" secondAttribute="trailing" constant="95" id="HpW-zG-wWO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iSg-Df-bGX" secondAttribute="trailing" constant="131" id="Iu1-0L-zT9"/>
+                            <constraint firstItem="C5y-ti-QOO" firstAttribute="top" secondItem="iSg-Df-bGX" secondAttribute="bottom" constant="35" id="Uog-U0-PiD"/>
+                            <constraint firstItem="iSg-Df-bGX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="132" id="aEl-Ed-kqS"/>
+                            <constraint firstItem="ZCR-Df-ABq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="98" id="dl6-l6-QJ9"/>
+                            <constraint firstItem="PqF-D8-hv6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="95" id="iza-kZ-29T"/>
+                            <constraint firstItem="ZCR-Df-ABq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lTu-L4-Nfz"/>
+                            <constraint firstItem="C5y-ti-QOO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uG4-bm-46v"/>
                             <constraint firstItem="iA2-vz-wVL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ujV-Tj-rUQ"/>
-                            <constraint firstItem="iSg-Df-bGX" firstAttribute="top" secondItem="PqF-D8-hv6" secondAttribute="bottom" constant="29" id="wVI-kA-rxm"/>
-                            <constraint firstItem="C5y-ti-QOO" firstAttribute="centerX" secondItem="iA2-vz-wVL" secondAttribute="centerX" id="wnC-72-94H"/>
+                            <constraint firstItem="iSg-Df-bGX" firstAttribute="top" secondItem="PqF-D8-hv6" secondAttribute="bottom" constant="29" id="wmx-RJ-bYf"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="iSg-Df-bGX" id="G7X-TW-JL0"/>
                         <outlet property="currentQuestionLabel" destination="iA2-vz-wVL" id="5df-Rc-GEN"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="ujV-Tj-rUQ" id="5EF-rL-qI7"/>
+                        <outlet property="nextQuestionLabel" destination="ZCR-Df-ABq" id="JtL-rU-Dwr"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="lTu-L4-Nfz" id="MKB-Sr-nWq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
