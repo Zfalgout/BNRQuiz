@@ -14,6 +14,7 @@
 		7621704C1EB6821300ADB8B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7621704A1EB6821300ADB8B4 /* LaunchScreen.storyboard */; };
 		762170571EB6821400ADB8B4 /* QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762170561EB6821400ADB8B4 /* QuizTests.swift */; };
 		762170621EB6821400ADB8B4 /* QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762170611EB6821400ADB8B4 /* QuizUITests.swift */; };
+		762170701EB68C6C00ADB8B4 /* Quiz-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 7621706F1EB68C6C00ADB8B4 /* Quiz-120.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7621705D1EB6821400ADB8B4 /* QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		762170611EB6821400ADB8B4 /* QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizUITests.swift; sourceTree = "<group>"; };
 		762170631EB6821400ADB8B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7621706F1EB68C6C00ADB8B4 /* Quiz-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Quiz-120.png"; path = "../../../iOSProgramming6ed/0 - Resources/Project App Icons/Quiz-120.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		762170351EB6821300ADB8B4 = {
 			isa = PBXGroup;
 			children = (
+				7621706F1EB68C6C00ADB8B4 /* Quiz-120.png */,
 				762170401EB6821300ADB8B4 /* Quiz */,
 				762170551EB6821400ADB8B4 /* QuizTests */,
 				762170601EB6821400ADB8B4 /* QuizUITests */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762170701EB68C6C00ADB8B4 /* Quiz-120.png in Resources */,
 				7621704C1EB6821300ADB8B4 /* LaunchScreen.storyboard in Resources */,
 				762170491EB6821300ADB8B4 /* Assets.xcassets in Resources */,
 				762170471EB6821300ADB8B4 /* Main.storyboard in Resources */,
